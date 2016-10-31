@@ -1,0 +1,66 @@
+@mixin toCenter($width:1200px){
+  width: $width;
+  display: block;
+  margin: 0 auto;
+}
+
+@mixin inlineBlock{
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+}
+
+@mixin borderRadius($x:50%,$y:50%){
+  -webkit-border-radius: $x $y;
+  -moz-border-radius: $x $y;
+  border-radius: $x $y;
+}
+
+@mixin oneLine($width:100%){
+  width: $width;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+@mixin sprite-h-f{
+  @include inlineBlock;
+  background-image: url("../image/sprite-h-f.png");
+}
+
+@mixin sprite-iocn{
+  @include inlineBlock;
+  background-image: url("../image/sprite-iocn.png");
+}
+
+@mixin sprite-nav{
+  @include inlineBlock;
+  background-image: url("../image/sprite-nav.png");
+}
+
+@mixin bg_flbtn{
+  @include inlineBlock;
+  background-image: url("../image/bg_flbtn.png");
+}
+
+@mixin sprite-bg{
+  @include inlineBlock;
+  background-image: url("../image/sprite-bg.png");
+}
+
+@mixin sprite-button{
+  @include inlineBlock;
+  background-image: url("../image/sprite-button.png");
+}
+@mixin sprite-repeat-bg{
+  @include inlineBlock;
+  background-image: url("../image/sprite-repeat-bg.png");
+}
+
+@mixin sprite-nheader{
+  @include inlineBlock;
+  background-image: url("../image/sprite-nheader.png");
+}

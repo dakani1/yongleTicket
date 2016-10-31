@@ -1,0 +1,526 @@
+body, html, div, header, ul, ol, li, dl, dt, dd, p, span, h1, h2, h3, h4, h5, strong, em, label, input {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+img:focus, img:visited, img:active,
+input:focus, input:visited, input:active {
+  outline: none; }
+
+img {
+  outline: none;
+  border: none; }
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #000; }
+
+a {
+  color: #4c4c4c;
+  text-decoration: none; }
+  a:hover {
+    color: #cc0001; }
+
+header {
+  height: 30px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 40; }
+
+#headerMain {
+  width: 1200px;
+  display: block;
+  margin: 0 auto; }
+
+.headerLogin p, .headerLogin .myYl {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top; }
+.headerLogin .welcome, .headerLogin .login, .headerLogin .collect {
+  line-height: 30px; }
+.headerLogin .collect {
+  margin-left: 16px; }
+.headerLogin .login {
+  margin-left: 9px;
+  margin-right: 5px; }
+
+.myYl {
+  padding-top: 3px;
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top; }
+  .myYl .first {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    height: 21px;
+    line-height: 12px;
+    border: 3px solid white;
+    border-bottom: none;
+    padding-top: 3px;
+    *padding-top: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    vertical-align: top; }
+  .myYl .dropdown {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    background-image: url("../image/sprite-iocn.png");
+    width: 13px;
+    height: 14px;
+    background-position: -2px -359px;
+    margin-left: 4px; }
+  .myYl ul.YlDropdown {
+    position: relative;
+    background-color: white;
+    margin-top: -3px;
+    z-index: 5;
+    line-height: 26px;
+    border: 3px solid #dddddd;
+    display: none; }
+    .myYl ul.YlDropdown li {
+      padding-left: 7px;
+      padding-right: 7px; }
+  .myYl:hover .first {
+    border-color: #dddddd; }
+  .myYl:hover .YlDropdown {
+    display: block; }
+  .myYl:hover .dropdown {
+    background-position: -2px -389px; }
+
+.headerHelp {
+  float: right; }
+  .headerHelp .help, .headerHelp .phone, .headerHelp .attention {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    line-height: 30px; }
+  .headerHelp .help, .headerHelp .phone {
+    margin-left: 8px;
+    margin-right: 8px; }
+    .headerHelp .help strong, .headerHelp .phone strong {
+      color: #e60012; }
+  .headerHelp .attention {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    background-image: url("../image/bg_flbtn.png");
+    margin-left: 8px;
+    width: 62px;
+    height: 22px;
+    margin-top: 4px;
+    line-height: 22px;
+    text-align: center;
+    color: #1582bd; }
+    .headerHelp .attention .sina {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/bg_flbtn.png");
+      width: 16px;
+      height: 14px;
+      margin: 3px 3px;
+      background-position: -190px 0; }
+  .headerHelp .first {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .headerHelp .myYl:hover {
+    z-index: 11; }
+    .headerHelp .myYl:hover .first {
+      height: 24px; }
+  .headerHelp div.YlDropdown {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: -3px;
+    background-color: white;
+    z-index: 5;
+    line-height: 26px;
+    height: 100px;
+    width: 200px;
+    border: 3px solid #dddddd;
+    display: none; }
+    .headerHelp div.YlDropdown li {
+      padding-left: 7px;
+      padding-right: 7px; }
+
+#topMain {
+  font-size: 0;
+  height: 90px;
+  position: relative;
+  z-index: 30;
+  width: 1200px;
+  display: block;
+  margin: 0 auto; }
+  #topMain h1, #topMain h1 a, #topMain h1 img, #topMain .search, #topMain .information {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top; }
+  #topMain .search {
+    padding-left: 110px;
+    margin-left: 106px;
+    position: relative; }
+    .location {
+      font-size: 12px;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #topMain .search .currentLocal {
+      line-height: 26px;
+      font-size: 14px; }
+    .locationSelect {
+      width: 74px;
+      height: 22px;
+      line-height: 22px;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/sprite-h-f.png");
+      background-position: -253px -39px;
+      position: relative; }
+      .locationSelect > p span {
+        margin-left: 6px;
+        color: #a5a5a5; }
+      .locationSelect ul.gather {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        border: 2px solid #88756e;
+        width: 642px;
+        background-color: white;
+        z-index: 10; }
+        .locationSelect ul.gather li {
+          margin: 10px 6px 0 13px;
+          padding-left: 70px;
+          padding-bottom: 10px;
+          border-bottom: 1px dotted #cccccc;
+          line-height: 28px;
+          position: relative;
+          font-size: 0; }
+        .locationSelect ul.gather dt {
+          width: 70px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 12px;
+          background: url("../image/cityArr.png") 54px center no-repeat; }
+        .locationSelect ul.gather dd {
+          display: inline-block;
+          *display: inline;
+          *zoom: 1;
+          vertical-align: top;
+          width: 79px;
+          font-size: 12px; }
+      .locationSelect:hover {
+        background-position: -253px -66px; }
+        .locationSelect:hover ul.gather {
+          display: block; }
+        .locationSelect:hover > p span {
+          color: white; }
+  #topMain .searchMain {
+    font-size: 12px;
+    width: 412px;
+    height: 34px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    background-image: url("../image/sprite-h-f.png");
+    background-position: left top; }
+    .searchIn {
+      font-size: 0;
+      width: 412px;
+      height: 34px;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/sprite-h-f.png");
+      background-position: left top; }
+      .searchIn input[type=text] {
+        width: 326px;
+        height: 32px;
+        line-height: 32px;
+        margin-left: 8px;
+        border: none;
+        background: transparent; }
+        .searchIn input[type=text]:focus {
+          outline: none; }
+      .searchIn a.btSearch {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+        width: 77px;
+        height: 34px;
+        background-color: transparent; }
+    .searchHot {
+      margin-top: 10px;
+      font-size: 0; }
+      .searchHot dt, .searchHot dd {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+        font-size: 12px;
+        padding-right: 7px; }
+      .searchHot .more {
+        color: #3399cc; }
+  .information {
+    width: 13px;
+    height: 14px;
+    float: right;
+    position: absolute;
+    z-index: 11;
+    top: 5px;
+    right: 11px; }
+    .information .dropLeft {
+      position: relative;
+      z-index: 5;
+      width: 13px;
+      height: 14px;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/sprite-iocn.png");
+      background-position: 0 -417px; }
+    .information:hover ul {
+      border: 1px solid #e0e0e0;
+      -webkit-box-shadow: 1px 1px 1px #eee;
+      -moz-box-shadow: 1px 1px 1px #eee;
+      box-shadow: 1px 1px 1px #eee; }
+      .information:hover ul .undb {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top; }
+    .information:hover .dropLeft {
+      background-position: 0 -436px; }
+    .information ul {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      padding: 20px 26px 0 13px;
+      margin-top: -26px;
+      margin-left: -204px;
+      font-size: 0;
+      width: 185px;
+      border: 1px solid transparent;
+      background-color: white; }
+      .information ul li {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+        font-size: 12px;
+        margin-bottom: 20px; }
+        .information ul li a {
+          display: inline-block;
+          *display: inline;
+          *zoom: 1;
+          vertical-align: top;
+          width: 61px;
+          height: 55px;
+          position: relative; }
+        .information ul li p {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          display: block;
+          text-align: center;
+          width: 100%; }
+    .information li.one {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/sprite-h-f.png");
+      background-position: 15px -466px; }
+    .information li.two {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/sprite-h-f.png");
+      background-position: 15px -638px; }
+    .information li.three {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/sprite-h-f.png");
+      background-position: 15px -812px; }
+    .information li.four {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/sprite-h-f.png");
+      background-position: 15px -987px; }
+    .information li.five {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/sprite-h-f.png");
+      background-position: 15px -1159px; }
+    .information li.undb {
+      display: none; }
+
+.navigation {
+  height: 42px;
+  width: 100%;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  background-image: url("../image/sprite-nav.png");
+  background-position: 0 -377px;
+  background-repeat: repeat-x;
+  position: relative;
+  z-index: 20; }
+
+.navMain {
+  width: 1200px;
+  display: block;
+  margin: 0 auto; }
+
+.allSort, .mainSort {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top; }
+
+.allSort {
+  position: relative; }
+
+.sortTit {
+  width: 200px;
+  line-height: 42px;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  background-image: url("../image/sprite-h-f.png");
+  background-position: -223px -122px; }
+  .sortTit:hover {
+    color: white; }
+
+.sortDetail {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 196px;
+  border: 2px solid #ab9f99;
+  border-top: none;
+  background-color: white; }
+  .sortDetail .item {
+    line-height: 39px;
+    height: 39px;
+    padding-left: 59px;
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    background-image: url("../image/sprite-nav.png");
+    display: block;
+    background-repeat: no-repeat; }
+    .sortDetail .item:hover {
+      background-color: #88766e; }
+      .sortDetail .item:hover ul.itemUl {
+        display: block;
+        background-color: white; }
+    ul.itemUl {
+      position: absolute;
+      left: 197px;
+      top: 0;
+      width: 117px;
+      border: 1px solid #a5a5a5;
+      font-size: 0;
+      display: none; }
+      ul.itemUl li {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+        background-image: url("../image/sprite-h-f.png");
+        display: block;
+        background-position: -307px -173px;
+        width: 100%;
+        font-size: 13px; }
+        ul.itemUl li:hover {
+          background-position: -307px -220px; }
+      ul.itemUl a {
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 10px;
+        padding-left: 33px;
+        border-bottom: 1px dotted #b2b2b2; }
+      ul.itemUl .noBottomBorder a {
+        border-bottom: none; }
+    .sortDetail .item > a {
+      display: block; }
+    .sortDetail .item:hover > a {
+      color: white; }
+  .sortDetail .item + .item {
+    border-top: 1px solid #eeeeee; }
+  .sortDetail .first {
+    background-position: 27px 0; }
+  .sortDetail .second {
+    background-position: 27px -40px; }
+  .sortDetail .third {
+    background-position: 27px -80px; }
+  .sortDetail .fouth {
+    background-position: 27px -120px; }
+  .sortDetail .fifth {
+    background-position: 27px -160px; }
+  .sortDetail .sixth {
+    background-position: 27px -200px; }
+  .sortDetail .seventh {
+    background-position: 27px -240px; }
+  .sortDetail .eigth {
+    background-position: 27px -280px; }
+  .sortDetail .ninth {
+    background-image: none; }
+
+.mainSort li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  line-height: 40px;
+  padding: 0 9px;
+  margin: 0 8px;
+  font-size: 14px; }
+  .mainSort li:hover {
+    background-color: #a81a19; }
+.mainSort a {
+  color: #ffffff;
+  font-family: "Microsoft YaHei",arial, sans-serif; }
+
+/*# sourceMappingURL=head.css.map */

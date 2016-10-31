@@ -1,0 +1,193 @@
+@import "style.scss";
+
+footer{
+  margin-top: 80px;
+  border-top: 4px solid #333333;
+  padding-top: 40px;
+  .link{
+    @include toCenter(1200px);
+    font-size: 0;
+    dl{
+      width: 165px;
+    }
+    dt{
+      font-size: 14px;
+      color: #000;
+      font-weight: bold;
+      line-height: 35px;
+    }
+
+    dd{
+      a{
+        line-height: 30px;
+      }
+    }
+  }
+
+  .linkLogo,dl{
+    @include inlineBlock;
+    font-size: 12px;
+  }
+
+  .linkLogo{
+    margin: 0 70px 0 20px;
+    padding-top: 20px;
+    a{
+      width: 170px;
+      height: 98px;
+      @include sprite-nheader;
+      background-position: 0 -158px;
+    }
+    strong{
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      color: #999;
+      text-align: center;
+      margin-top: 12px;
+    }
+  }
+
+  .contact{
+    @include toCenter(1200px);
+    font-size: 0;
+    margin-top: 40px;
+    li{
+      @include inlineBlock;
+    }
+
+    a{
+      @include sprite-h-f;
+      height: 80px;
+    }
+
+    @at-root  .ticket {
+      a{
+        width: 246px;
+        background-position: 0 -39px;
+      }
+    }
+
+    @at-root .seat {
+      a{
+        width: 219px;
+        background-position: 0 -122px;
+      }
+    }
+
+    @at-root .electric {
+      a{
+        width: 239px;
+        background-position: 0 -205px;
+      }
+    }
+
+    @at-root .app {
+      a{
+        width: 248px;
+        background-position: 0 -288px;
+      }
+    }
+
+    @at-root .concern {
+      a{
+        width: 248px;
+        background-position: 0 -371px;
+      }
+    }
+  }
+
+  .companyInfo{
+    @include toCenter(1200px);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 17px;
+    li{
+      @include inlineBlock;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 12px;
+    }
+
+    li+li{
+      border-left: 1px solid #cacaca;
+    }
+  }
+
+  p{
+    line-height: 26px;
+    text-align: center;
+    color: #aaa;
+    a{
+      color: #aaa;
+    }
+  }
+
+  .someLink{
+    font-size: 0;
+    text-align: center;
+    margin-top: 6px;
+    a{
+      font-size: 12px;
+      height: 30px;
+      line-height: 30px;
+      @include sprite-iocn;
+      background-repeat: no-repeat;
+    }
+
+    a+a{
+      margin-left: 24px;
+    }
+
+    .union{
+      padding-left: 30px;
+      background-position: 0 -474px;
+    }
+
+    .security{
+      padding-left: 20px;
+      background-position: 0 -550px;
+    }
+
+    .culture{
+      padding-left: 35px;
+      background-position: 0 -765px;
+    }
+
+    .bj1{
+       padding-left: 0;
+      background: none;
+     }
+
+    .bj2{
+        padding-left: 25px;
+        background-position: 0 -815px;
+      }
+  }
+
+  .safety{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 37px;
+    font-size: 0;
+    li{
+      @include inlineBlock;
+    }
+
+    li+li{
+      margin-left: 23px;
+    }
+
+    img{
+      width: 79px;
+      height: 28px;
+    }
+
+  }
+
+}
+
+
+
+
+

@@ -1,0 +1,39 @@
+$fontSize:12px;
+$textColor:#000;
+$aColor:#4c4c4c;
+$aHoverColor:#cc0001;
+$lighterColor:#a5a5a5;
+
+body,html,div,header,ul,ol,li,dl,dt,dd,p,span,h1,h2,h3,h4,h5,strong,em,label,input{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+img:focus,img:visited,img:active,
+input:focus,input:visited,input:active{
+  outline: none;
+}
+
+img{
+  outline: none;
+  border: none;
+}
+
+body{
+  font-family:  Arial, sans-serif;
+  font-size:$fontSize;
+  color: $textColor;
+}
+
+a{
+  color: $aColor;
+  text-decoration: none;
+  &:hover{
+    color: $aHoverColor;
+  }
+}
+
+
+
+

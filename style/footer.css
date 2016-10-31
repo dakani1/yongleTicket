@@ -1,0 +1,147 @@
+footer {
+  margin-top: 80px;
+  border-top: 4px solid #333333;
+  padding-top: 40px; }
+  footer .link {
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+    font-size: 0; }
+    footer .link dl {
+      width: 165px; }
+    footer .link dt {
+      font-size: 14px;
+      color: #000;
+      font-weight: bold;
+      line-height: 35px; }
+    footer .link dd a {
+      line-height: 30px; }
+  footer .linkLogo, footer dl {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    font-size: 12px; }
+  footer .linkLogo {
+    margin: 0 70px 0 20px;
+    padding-top: 20px; }
+    footer .linkLogo a {
+      width: 170px;
+      height: 98px;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/sprite-nheader.png");
+      background-position: 0 -158px; }
+    footer .linkLogo strong {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      color: #999;
+      text-align: center;
+      margin-top: 12px; }
+  footer .contact {
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+    font-size: 0;
+    margin-top: 40px; }
+    footer .contact li {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top; }
+    footer .contact a {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/sprite-h-f.png");
+      height: 80px; }
+    .ticket a {
+      width: 246px;
+      background-position: 0 -39px; }
+    .seat a {
+      width: 219px;
+      background-position: 0 -122px; }
+    .electric a {
+      width: 239px;
+      background-position: 0 -205px; }
+    .app a {
+      width: 248px;
+      background-position: 0 -288px; }
+    .concern a {
+      width: 248px;
+      background-position: 0 -371px; }
+  footer .companyInfo {
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 17px; }
+    footer .companyInfo li {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 12px; }
+    footer .companyInfo li + li {
+      border-left: 1px solid #cacaca; }
+  footer p {
+    line-height: 26px;
+    text-align: center;
+    color: #aaa; }
+    footer p a {
+      color: #aaa; }
+  footer .someLink {
+    font-size: 0;
+    text-align: center;
+    margin-top: 6px; }
+    footer .someLink a {
+      font-size: 12px;
+      height: 30px;
+      line-height: 30px;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      background-image: url("../image/sprite-iocn.png");
+      background-repeat: no-repeat; }
+    footer .someLink a + a {
+      margin-left: 24px; }
+    footer .someLink .union {
+      padding-left: 30px;
+      background-position: 0 -474px; }
+    footer .someLink .security {
+      padding-left: 20px;
+      background-position: 0 -550px; }
+    footer .someLink .culture {
+      padding-left: 35px;
+      background-position: 0 -765px; }
+    footer .someLink .bj1 {
+      padding-left: 0;
+      background: none; }
+    footer .someLink .bj2 {
+      padding-left: 25px;
+      background-position: 0 -815px; }
+  footer .safety {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 37px;
+    font-size: 0; }
+    footer .safety li {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top; }
+    footer .safety li + li {
+      margin-left: 23px; }
+    footer .safety img {
+      width: 79px;
+      height: 28px; }
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,566 @@
+@import "public.scss";
+@import "style.scss";
+
+$mainWidth:1200px;
+
+header{
+  height: 30px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 40;
+}
+
+#headerMain{
+  @include toCenter($mainWidth);
+}
+
+.headerLogin{
+  p,.myYl{
+    @include inlineBlock;
+  }
+
+  .welcome,.login,.collect{
+    line-height: 30px;
+  }
+
+  .collect{
+    margin-left: 16px;
+  }
+
+  .login{
+    margin-left: 9px;
+    margin-right: 5px;
+  }
+}
+
+.myYl{
+  padding-top: 3px;
+  position: relative;
+  @include inlineBlock;
+  .first{
+    @include inlineBlock;
+    height: 21px;
+    line-height: 12px;
+    border: 3px solid white;
+    border-bottom: none;
+    padding-top: 3px;
+    *padding-top: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    vertical-align: top;
+  }
+
+  .dropdown{
+    @include sprite-iocn;
+    width: 13px;
+    height: 14px;
+    background-position: -2px -359px;
+    margin-left: 4px;
+  }
+
+  ul.YlDropdown{
+    position: relative;
+    background-color: white;
+    margin-top: -3px;
+    z-index: 5;
+    line-height: 26px;
+    border: 3px solid #dddddd;
+    display: none;
+    li{
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+  }
+
+  &:hover{
+    .first{
+      border-color: #dddddd;
+    }
+
+    .YlDropdown{
+      display: block;
+    }
+    .dropdown{
+      background-position: -2px -389px;
+    }
+
+  }
+
+}
+
+.headerHelp{
+  float: right;
+  .help,.phone,.attention{
+    @include inlineBlock;
+    line-height: 30px;
+  }
+
+  .help,.phone{
+    margin-left: 8px;
+    margin-right: 8px;
+    strong{
+      color: #e60012;
+    }
+  }
+
+
+  .attention{
+    @include bg_flbtn;
+    margin-left: 8px;
+    width: 62px;
+    height: 22px;
+    margin-top: 4px;
+    line-height: 22px;
+    text-align: center;
+    color: #1582bd;
+    .sina{
+      @include bg_flbtn;
+      width: 16px;
+      height: 14px;
+      margin: 3px 3px;
+      background-position: -190px 0;
+    }
+  }
+
+  .first {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .myYl:hover{
+    z-index: 11;
+    .first {
+      height: 24px;
+    }
+  }
+
+  div.YlDropdown{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    margin-top: -3px;
+    background-color: white;
+    z-index: 5;
+    line-height: 26px;
+    height: 100px;
+    width: 200px;
+    border: 3px solid #dddddd;
+    display: none;
+    li{
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+  }
+}
+
+
+
+#topMain{
+  font-size: 0;
+  height: 90px;
+  position: relative;
+  z-index: 30;
+  @include  toCenter(1200px);
+  h1,h1 a,h1 img,.search,.information{
+    @include inlineBlock;
+  }
+
+
+
+  .search{
+    padding-left: 110px;
+    margin-left: 106px;
+    position: relative;
+    @at-root  .location{
+      font-size: $fontSize;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .currentLocal{
+      line-height: 26px;
+      font-size: 14px;
+    }
+    
+    @at-root   .locationSelect{
+      width: 74px;
+      height: 22px;
+      line-height: 22px;
+      @include sprite-h-f;
+      background-position: -253px -39px;
+      position: relative;
+      &>p span{
+          margin-left: 6px;
+          color: $lighterColor;
+      }
+
+
+      ul.gather{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        border: 2px solid #88756e;
+        width: 642px;
+        background-color: white;
+        z-index: 10;
+        li {
+          margin: 10px 6px 0 13px;
+          padding-left: 70px;
+          padding-bottom: 10px;
+          border-bottom: 1px dotted #cccccc;
+          line-height: 28px;
+          position: relative;
+          font-size: 0;
+        }
+
+        dt{
+          width: 70px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: $fontSize;
+          background:url("../image/cityArr.png") 54px center no-repeat;
+        }
+
+        dd{
+          @include inlineBlock;
+          width: 79px;
+          font-size: $fontSize;
+        }
+
+      }
+
+
+
+      &:hover{
+        background-position: -253px -66px;
+        ul.gather{
+          display: block;
+        }
+        
+        &>p span{
+          color: white;
+        }
+      }
+    }
+  }
+
+  .searchMain{
+    font-size: $fontSize;
+    width: 412px;
+    height: 34px;
+    @include sprite-h-f;
+    background-position: left top;
+
+    @at-root .searchIn{
+      font-size: 0;
+      width: 412px;
+      height: 34px;
+      @include sprite-h-f;
+      background-position: left top;
+
+      input[type=text]{
+        width: 326px;
+        height: 32px;
+        line-height: 32px;
+        margin-left: 8px;
+        border: none;
+        background:transparent;
+        &:focus{
+          outline: none;
+        }
+      }
+
+      a.btSearch{
+        @include  inlineBlock;
+        width: 77px;
+        height: 34px;
+        background-color: transparent;
+      }
+    }
+
+    @at-root .searchHot{
+      margin-top: 10px;
+      font-size: 0;
+      dt,dd{
+        @include  inlineBlock;
+        font-size: $fontSize;
+        padding-right: 7px;
+      }
+      .more{
+        color: #3399cc;
+      }
+    }
+
+  }
+
+  @at-root  .information{
+
+    width: 13px;
+    height: 14px;
+    float: right;
+    position: absolute;
+    z-index: 11;
+    top: 5px;
+    right: 11px;
+    .dropLeft{
+      position: relative;
+      z-index: 5;
+      width:13px;
+      height: 14px;
+      @include sprite-iocn;
+      background-position: 0 -417px;
+    }
+
+    &:hover  {
+      ul{
+        border: 1px solid #e0e0e0;
+        -webkit-box-shadow: 1px 1px 1px #eee;
+        -moz-box-shadow:   1px 1px 1px #eee;
+        box-shadow:   1px 1px 1px #eee;
+        .undb{
+          @include  inlineBlock;
+        }
+      }
+      .dropLeft{
+        background-position: 0 -436px;
+      }
+    }
+
+    ul{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      padding: 20px 26px 0 13px;
+      margin-top: -26px;
+      margin-left: -204px;
+      font-size: 0;
+      width: 185px;
+      border: 1px solid transparent;
+      background-color: white;
+
+      li{
+        @include inlineBlock;
+        font-size: $fontSize;
+        margin-bottom: 20px;
+        a{
+          @include inlineBlock;
+          width: 61px;
+          height: 55px;
+          position: relative;
+        }
+
+        p{
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          display: block;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+
+
+
+    li.one{
+      @include sprite-h-f;
+      background-position: 15px -466px;
+    }
+
+    li.two{
+      @include sprite-h-f;
+      background-position: 15px -638px;
+    }
+    li.three{
+      @include sprite-h-f;
+      background-position: 15px -812px;
+    }
+    li.four{
+      @include sprite-h-f;
+      background-position: 15px -987px;
+    }
+    li.five{
+      @include sprite-h-f;
+      background-position: 15px -1159px;
+    }
+    li.undb{
+      display: none;
+    }
+  }
+}
+
+
+.navigation {
+  height: 42px;
+  width: 100%;
+  @include sprite-nav;
+  background-position: 0 -377px;
+  background-repeat: repeat-x;
+  position: relative;
+  z-index: 20;
+}
+
+.navMain{
+  @include toCenter(1200px);
+}
+
+.allSort,.mainSort{
+  @include inlineBlock;
+}
+
+.allSort{
+  position: relative;
+}
+
+.sortTit{
+  width: 200px;
+  line-height: 42px;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  @include sprite-h-f;
+  background-position:-223px -122px;
+  &:hover{
+    color: white;
+  }
+}
+
+.sortDetail{
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 196px;
+  border: 2px solid #ab9f99;
+  border-top: none;
+  background-color: white;
+  .item{
+    line-height: 39px;
+    height: 39px;
+    padding-left: 59px;
+    position: relative;
+    @include sprite-nav;
+    display: block;
+    background-repeat: no-repeat;
+    &:hover{
+      background-color: #88766e;
+      ul.itemUl{
+        display: block;
+        background-color: white;
+      }
+    }
+
+    @at-root ul.itemUl{
+      position: absolute;
+      left: 197px;
+      top: 0;
+      width: 117px;
+      border: 1px solid #a5a5a5;
+      font-size: 0;
+      display: none;
+
+      li{
+        @include sprite-h-f;
+        display: block;
+        background-position: -307px -173px;
+        width: 100%;
+        font-size: 13px;
+        &:hover{
+          background-position: -307px -220px;
+        }
+      }
+
+      a{
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        margin:0 10px;
+        padding-left:33px;
+        border-bottom: 1px dotted #b2b2b2;
+      }
+
+      .noBottomBorder a{
+        border-bottom: none;
+      }
+    }
+
+    &>a{
+      display: block;
+    }
+
+    &:hover>a{
+      color: white;
+    }
+  }
+
+  .item + .item{
+    border-top: 1px solid #eeeeee;
+  }
+
+  .first{
+    background-position: 27px 0;
+  }
+  .second{
+    background-position: 27px -40px;
+  }
+  .third{
+    background-position: 27px -80px;
+  }
+  .fouth{
+    background-position: 27px -120px;
+  }
+  .fifth{
+    background-position: 27px -160px;
+  }
+  .sixth{
+    background-position: 27px -200px;
+  }
+  .seventh{
+    background-position: 27px -240px;
+  }
+  .eigth{
+    background-position: 27px -280px;
+  }
+  .ninth{
+    background-image:none;
+  }
+
+
+
+
+  
+}
+
+.mainSort{
+  li {
+    @include inlineBlock;
+    line-height: 40px;
+    padding:0 9px;
+    margin:0 8px;
+    font-size: 14px;
+    &:hover{
+      background-color: #a81a19;
+    }
+  }
+
+  a{
+    color: #ffffff;
+    font-family: "Microsoft YaHei",arial, sans-serif;
+  }
+}
+
+
+
+
+
+
+
+
